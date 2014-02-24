@@ -1,13 +1,17 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
-# Usage: bash update_entrez.sh
+# Usage: bash update_entrez.sh [skip_interactive]
 # Version: 1.1
 # Author: Vincent VanBuren
-# Purpose: Create/updates a local Entrez database that includes GeneRIFs, Homologene, and Taxonomic names.
+# Purpose: Create/updates a local Entrez database that includes GeneRIFs,
+#          Homologene, and Taxonomic names.
 # Requires: -create_entrez.sql
 #	    -clean.pl
 #           -load_entrez.sh
-#         
+# Note: add skip_interactive to the script call:
+#       	bash update_entrez.sh skip_interactive
+#       to avoid any interaction with licensing announcements . This will make
+#       the entire run automated, thus making it easy to schedule updates using #       CRON on Linux or by calendaring with Automator on Mac OS X.     
 #           
 #-------------------------------------------------------------------------------
 #                              update_entrez.sh
@@ -31,7 +35,7 @@
 perl gnu.pl "                            update_entrez.sh
                        Part of Entrez Starter Kit
                Copyright (C) 2014  Kepler Biocomputing LLC
-                     <http://keplerbiocomputing.com>"
+                     <http://keplerbiocomputing.com>" $1
 
 bash get_entrez.sh
 bash load_entrez.sh
