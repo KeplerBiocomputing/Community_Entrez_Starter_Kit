@@ -1,15 +1,8 @@
 Community_Entrez_Starter_Kit
 ============================
-
-<<<<<<< HEAD
 Get started now with your own local copy of Entrez Gene, Homologene, and NCBI
 Taxonomy annotations. Automatically create the MySQL database, retrieve tables
 from NCBI, and populate your local database with a single command.
-=======
-Get started now with your own local copy of Entrez Gene, Homologene, adn NCBI Taxonomy annotations.
-Automatically create the MySQL database, retrieve tables from NCBI, and populate your local database 
-with a single command.
->>>>>>> FETCH_HEAD
 
 README  Documentation for Entrez Starter Kit
 Author: Vincent VanBuren
@@ -25,7 +18,6 @@ Email: vvanburen@gmail.com
 
     
 NOTICE
-<<<<<<< HEAD
 	Entrez Gene and associated data files homologene.data, interactions,
 	and associated files in the taxdump directory are created and maintained
 	by the National Center for Biotechnology Information (NCBI), USA. Entrez
@@ -40,20 +32,6 @@ RATIONALE
 	biologists, and 
 	(2) to provide the community with a set of software tools to simplify
 	setting up and updating a local copy of the core Entrez gene tables. 
-=======
-	Entrez Gene and associated data files homologene.data, interactions, and associated files in the taxdump
-	directory are created and maintained by the National Center for Biotechnology Information (NCBI), USA. Entrez
-	Starter Kit was initially developed by Vincent VanBuren at Kepler Biocomputing LLC, and is not affiliated
-	with Entrez Gene or NCBI.
-   
-    
-RATIONALE
-	The Entrez Starter Kit software was originally authored by Vincent VanBuren, who had two goals in mind: 
-	(1) to provide an educational tool for training new computational biologists, and 
-	(2) to provide the community with a set of software tools to simplify setting up and updating a local copy
-	of the core Entrez gene tables. Meeting these goals will help new scholars to get a running start in 
-	computational biology so that they may quickly begin doing original research. 
->>>>>>> FETCH_HEAD
 
 
 FILE DESCRIPTIONS
@@ -75,15 +53,10 @@ FILE DESCRIPTIONS
 	update_entrez.sh: the main application script. This
 		script calls gnu.pl, get_entrez.sh and load_entrez.sh.
 	
-	get_entrez.sh: creates a new local directory --
-<<<<<<< HEAD
-		'entrez_downloads', and retrieves the following via FTP to
-		NCBI's servers into that new directory, where they are
-		uncompressed and unarchived as needed:
-=======
-		'entrez_downloads', and retrieves the following via FTP to NCBI's servers into that new directory,
-		where they are uncompressed and unarchived as needed:
->>>>>>> FETCH_HEAD
+	get_entrez.sh: creates a new local directory -- 'entrez_downloads', and
+		retrieves the following via FTP to NCBI's servers into that new
+		directory, where they are uncompressed and unarchived as needed:
+
 			gene2accession
 			gene2ensembl
 			gene2go
@@ -102,7 +75,7 @@ FILE DESCRIPTIONS
 			interactions
 			mim2gene_medgen
 			taxdump/
-<<<<<<< HEAD
+
 		taxdump/names.dmp is grep'd to get all lines containing
 		'scientific name', and those lines are put into a new file:
 		taxid_taxname.dmp.
@@ -112,20 +85,11 @@ FILE DESCRIPTIONS
 		modify the interactions, mim2gene_medgen and gene_history data
 		files (see 'clean.pl' below). All mysql tables are then
 		populated by loading the appropriate data files.
-=======
-		taxdump/names.dmp is grep'd to get all lines containing 'scientific name', and those lines are put into 
-		a new file: taxid_taxname.dmp.
-	
-	load_entrez.sh: calls on the mysql client to SOURCE create_entrez.sql for creating the entrez_gene database,
-	then calls clean.pl to modify the interactions, mim2gene_medgen and gene_history data files (see 'clean.pl' below).
-	All mysql tables are then populated by loading the appropriate data files.
->>>>>>> FETCH_HEAD
 	
 	create_entrez.sql: SOURCE'd in the mysql client to create the
 		entrez_gene database and all of its tables.
 	
 	clean.pl: creates a new data file clean.<filename> where
-<<<<<<< HEAD
 		cells equal to '-' are replaced with the null character '\N'.
 		This is called in load_entrez.sh to modify the interactions,
 		mim2gene_medgen and gene_history data files. We find it
@@ -141,40 +105,19 @@ FILE DESCRIPTIONS
 		are extracted from taxid_taxname.dmp and put into a new file
 		(taxid_taxname) for loading into the database table
 		tax2organism.
-=======
-		cells equal to '-' are replaced with the null character '\N'. This is called in load_entrez.sh to modify the
-		interactions, mim2gene_medgen and gene_history data files. We find it preferable to have null entries in the
-		database rather than an arbitrary character indicating 'no value'.  Careful: you would not  want to use this
-		script 'as-is' on a table containing strand orientations (i.e. '+' / '-'), or any other table where a single
-		dash would be an appropriate value in one or more fields.
-	
-	process_taxonomy.pl: continues processing "scientific name"
-		rows from name.dmp, which were previously grep'd to the file taxid_taxname.dmp. The first two columns
-		(tax_id and tax_name) are extracted from taxid_taxname.dmp and put into a new file (taxid_taxname) 
-		for loading into the database table tax2organism.
->>>>>>> FETCH_HEAD
 	
 	examples.sql: some example MySQL queries to get started
 		using the entrez_gene database.
 	
-<<<<<<< HEAD
 	gnu.pl: serves GNU license notifications in the interactive scripts
 		update_entrez.pl, get_entrez.pl, and load_entrez.pl.
-=======
-	gnu.pl: serves GNU license notifications in the
-		interactive scripts update_entrez.pl, get_entrez.pl,  and load_entrez.pl
->>>>>>> FETCH_HEAD
 	
 
 GNU Free Documentation License
 
 Version 1.3, 3 November 2008
 
-<<<<<<< HEAD
 Copyright © 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. <http://fsf.org/>
-=======
-Copyright Â© 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. <http://fsf.org/>
->>>>>>> FETCH_HEAD
 
 Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
@@ -242,11 +185,7 @@ N. Do not retitle any existing section to be Entitled "Endorsements" or to confl
 O. Preserve any Warranty Disclaimers.
 If the Modified Version includes new front-matter sections or appendices that qualify as Secondary Sections and contain no material copied from the Document, you may at your option designate some or all of these sections as invariant. To do this, add their titles to the list of Invariant Sections in the Modified Version's license notice. These titles must be distinct from any other section titles.
 
-<<<<<<< HEAD
 You may add a section Entitled "Endorsements", provided it contains nothing but endorsements of your Modified Version by various partiesÑfor example, statements of peer review or that the text has been approved by an organization as the authoritative definition of a standard.
-=======
-You may add a section Entitled "Endorsements", provided it contains nothing but endorsements of your Modified Version by various partiesâ€”for example, statements of peer review or that the text has been approved by an organization as the authoritative definition of a standard.
->>>>>>> FETCH_HEAD
 
 You may add a passage of up to five words as a Front-Cover Text, and a passage of up to 25 words as a Back-Cover Text, to the end of the list of Cover Texts in the Modified Version. Only one passage of Front-Cover Text and one of Back-Cover Text may be added by (or through arrangements made by) any one entity. If the Document already includes a cover text for the same cover, previously added by you or by arrangement made by the same entity you are acting on behalf of, you may not add another; but you may replace the old one, on explicit permission from the previous publisher that added the old one.
 
@@ -310,12 +249,7 @@ To use this License in a document you have written, include a copy of the Licens
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
     A copy of the license is included in the section entitled "GNU
     Free Documentation License".
-<<<<<<< HEAD
 If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts, replace the "with É Texts." line with this:
-=======
-If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts, replace the "with â€¦ Texts." line with this:
->>>>>>> FETCH_HEAD
-
     with the Invariant Sections being LIST THEIR TITLES, with the
     Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST.
 If you have Invariant Sections without Cover Texts, or some other combination of the three, merge those two alternatives to suit the situation.
