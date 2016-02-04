@@ -34,13 +34,13 @@ INSTALLATION
 
 	3. At the command line, CD to the directory containing these instructions and run the complete database installation with:
 
-	bash update_entrez.pl
+	bash update_entrez.sh
 
 
 UPDATING THE DATABASE
 	1. You can update your new database with the latest Entrez files by using the same script used in the original installation:
 
-	bash update_entrez.pl
+	bash update_entrez.sh
 
 
 
