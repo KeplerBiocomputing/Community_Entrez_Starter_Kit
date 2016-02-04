@@ -49,7 +49,7 @@ CREATE TABLE  `entrez_gene`.`homologene` (
 
 CREATE TABLE  `entrez_gene`.`gene_info` (
   `tax_id` int(11) DEFAULT NULL,
-  `gene_id` int(11) DEFAULT NULL,
+  `gene_id` int(11) NOT NULL,
   `symbol` varchar(50) DEFAULT NULL,
   `locusTag` varchar(30) DEFAULT NULL,
   `synonyms` text,
