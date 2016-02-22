@@ -9,7 +9,7 @@ README  Documentation for Entrez Starter Kit
 Author: Vincent VanBuren
 Email: vvanburen@gmail.com
 
-   Copyright (C)  2014  Kepler Biocomputing LLC <http://keplerbiocomputing.com>.
+   Copyright (C)  2014-2016  Kepler Biocomputing LLC <http://keplerbiocomputing.com>.
     Permission is granted to copy, distribute and/or modify this document
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
@@ -117,7 +117,7 @@ GNU Free Documentation License
 
 Version 1.3, 3 November 2008
 
-Copyright © 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. <http://fsf.org/>
+Copyright Â© 2000, 2001, 2002, 2007, 2008 Free Software Foundation, Inc. <http://fsf.org/>
 
 Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
@@ -185,7 +185,7 @@ N. Do not retitle any existing section to be Entitled "Endorsements" or to confl
 O. Preserve any Warranty Disclaimers.
 If the Modified Version includes new front-matter sections or appendices that qualify as Secondary Sections and contain no material copied from the Document, you may at your option designate some or all of these sections as invariant. To do this, add their titles to the list of Invariant Sections in the Modified Version's license notice. These titles must be distinct from any other section titles.
 
-You may add a section Entitled "Endorsements", provided it contains nothing but endorsements of your Modified Version by various partiesÑfor example, statements of peer review or that the text has been approved by an organization as the authoritative definition of a standard.
+You may add a section Entitled "Endorsements", provided it contains nothing but endorsements of your Modified Version by various partiesÃ‘for example, statements of peer review or that the text has been approved by an organization as the authoritative definition of a standard.
 
 You may add a passage of up to five words as a Front-Cover Text, and a passage of up to 25 words as a Back-Cover Text, to the end of the list of Cover Texts in the Modified Version. Only one passage of Front-Cover Text and one of Back-Cover Text may be added by (or through arrangements made by) any one entity. If the Document already includes a cover text for the same cover, previously added by you or by arrangement made by the same entity you are acting on behalf of, you may not add another; but you may replace the old one, on explicit permission from the previous publisher that added the old one.
 
@@ -249,7 +249,7 @@ To use this License in a document you have written, include a copy of the Licens
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
     A copy of the license is included in the section entitled "GNU
     Free Documentation License".
-If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts, replace the "with É Texts." line with this:
+If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts, replace the "with Ã‰ Texts." line with this:
 
     with the Invariant Sections being LIST THEIR TITLES, with the
     Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST.
