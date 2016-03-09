@@ -195,8 +195,11 @@ CREATE TABLE  `entrez_gene`.`gene2accession` (
   `end_pos_gen_accession` varchar(30) DEFAULT NULL,
   `orientation` varchar(30) DEFAULT NULL,
   `assembly` varchar(100) DEFAULT NULL,
-  KEY `gene2accession_index_nuc` (`RNA_nuc_accession_version`),
+  KEY `gene2accession_index_RNA` (`RNA_nuc_accession_version`),
+  KEY `gene2accession_index_DNA` (`genome_nuc_accession_version`),
+  KEY `gene2accession_index_protein` (`protein_accession_version`),
   KEY `gene2accession_index_tax` (`tax_id`),
   KEY `gene2accession_index_gene` (`gene_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
 
