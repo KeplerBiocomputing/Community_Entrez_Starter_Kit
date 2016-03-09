@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # Usage in MySQL client: SOURCE create_entrez.sql
-# Version: 1.1
+# Version: 1.2
 # Author: Vincent VanBuren
 # Purpose: This mysql script will create an entrez_gene database and its 
 #          associated tables.       
@@ -8,7 +8,7 @@
 #                             create_entrez.sql
 # MySQL code for creating a local entrez_gene database and associated tables.
 #                         Part of Entrez Starter Kit.
-# Copyright (C) 2014 Kepler Biocomputing LLC <http://keplerbiocomputing.com>
+# Copyright (C) 2014-2016 Kepler Biocomputing LLC <http://keplerbiocomputing.com>
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
